@@ -2,6 +2,24 @@ import graphviz
 import re
 import textwrap
 
+GROUP_COLORS = [
+    ('#4e79a7', '#ffffff'),
+    ('#f28e2b', '#000000'),
+    ('#e15759', '#ffffff'),
+    ('#76b7b2', '#000000'),
+    ('#59a14f', '#ffffff'),
+    ('#edc948', '#000000'),
+    ('#b07aa1', '#ffffff'),
+    ('#ff9da7', '#000000'),
+    ('#9c755f', '#ffffff'),
+    ('#bab0ac', '#000000'),
+    ('#d37295', '#ffffff'),
+    ('#a0cbe8', '#000000'),
+    ('#ffbe7d', '#000000'),
+    ('#8cd17d', '#000000'),
+    ('#b6992d', '#ffffff'),
+]
+
 class Visualizer:
   def __init__(self, disciplines_df):
     self.df = disciplines_df
@@ -9,21 +27,29 @@ class Visualizer:
   def format_label(self, name, width=20):
     return textwrap.fill(name, width=width, break_long_words=False)
 
+  def _build_group_color_map(self):
+    groups = self.df['code'].str[:3].unique()
+    return {
+        group: GROUP_COLORS[i % len(GROUP_COLORS)]
+        for i, group in enumerate(sorted(groups))
+    }
+
   def generate_visualization(self):
+    group_color_map = self._build_group_color_map()
+
     dot = graphviz.Digraph(
         node_attr={
             'shape': 'box', 
             'fontname': 'Helvetica',
-            'fontsize': '9',
+            'fontsize': '12',
             'style': 'filled',
-            'fillcolor': '#e1e1e1',
             'width': '2.0', 
             'height': '0.8'
         },
         graph_attr={
             'rankdir': 'TB',
             'splines': 'ortho',
-            'nodesep': '0.5',
+            'nodesep': '0.3',
             'ranksep': '1.0',
             'concentrate': 'true',
             'newrank': 'true'
@@ -48,20 +74,30 @@ class Visualizer:
           rank='same' if name != 10 else 'sink',
         )
         for index, row in group.iterrows():
+          node_group = row['code'][0:3]
+          fillcolor, fontcolor = group_color_map.get(node_group, ('#e1e1e1', '#000000'))
 
           subgraph.node(
             row['code'], 
             self.format_label(row['name']), 
-            group=row['code'][0:3],
-            style='filled', 
+            group=node_group,
+            style='filled',
+            fillcolor=fillcolor,
+            fontcolor=fontcolor,
             fontname='Helvetica-Bold'
           )
+
+    code_to_color = {
+        row['code']: group_color_map.get(row['code'][0:3], ('#555555', '#000000'))[0]
+        for _, row in df.iterrows()
+    }
 
     for index, row in df.iterrows():
       for activity in row['neededActivities']:
         if not re.match(r".*\-.*", activity):
           parsed_activity = activity.split(',')[0]
-          dot.edge(parsed_activity, row['code'], penwidth='1.8', constraint='false', color='#555555')
+          edge_color = code_to_color.get(parsed_activity, '#555555')
+          dot.edge(parsed_activity, row['code'], penwidth='1.8', constraint='false', color=edge_color)
 
     dot.render(
       "visualizacao",

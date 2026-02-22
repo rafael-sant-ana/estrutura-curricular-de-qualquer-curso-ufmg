@@ -1,146 +1,296 @@
 digraph {
-	graph [concentrate=true newrank=true nodesep=0.5 rankdir=TB ranksep=1.0 splines=ortho]
-	node [fillcolor="#e1e1e1" fontname=Helvetica fontsize=9 height=0.8 shape=box style=filled width=2.0]
-	DCC096 -> CAD103 [style=invis]
-	CAD103 -> DCC221 [style=invis]
-	DCC221 -> DCC006 [style=invis]
-	DCC006 -> DCC024 [style=invis]
-	DCC024 -> DCC053 [style=invis]
-	DCC053 -> DCC095 [style=invis]
-	DCC095 -> DCC637 [style=invis]
-	DCC637 -> DCC604 [style=invis]
-	DCC604 -> DCC009 [style=invis]
-	DCC203 -> DCC114 [style=invis]
-	DCC114 -> DCC222 [style=invis]
-	DCC222 -> DCC051 [style=invis]
-	DCC051 -> DCC035 [style=invis]
-	DCC035 -> DCC094 [style=invis]
-	DCC094 -> DCC636 [style=invis]
-	DCC638 -> DCC216 [style=invis]
-	DCC216 -> DCC639 [style=invis]
-	DCC639 -> DCC129 [style=invis]
-	DCC129 -> DCC207 [style=invis]
-	DCC207 -> DCC605 [style=invis]
-	DCC605 -> DCC641 [style=invis]
-	ECN140 -> DCC219 [style=invis]
-	DCC219 -> EST032 [style=invis]
-	EST032 -> DCC206 [style=invis]
-	DCC206 -> MAT040 [style=invis]
-	MAT040 -> DCC642 [style=invis]
-	MAT038 -> MAT001 [style=invis]
-	MAT001 -> MAT039 [style=invis]
-	MAT039 -> MAT034 [style=invis]
+	graph [concentrate=true newrank=true nodesep=0.3 rankdir=TB ranksep=1.0 splines=ortho]
+	node [fontname=Helvetica fontsize=12 height=0.8 shape=box style=filled width=2.0]
+	FAF116 -> BIG157 [style=invis]
+	BIG157 -> BIQ602 [style=invis]
+	BIQ602 -> EST083 [style=invis]
+	EST083 -> ACT127 [style=invis]
+	ACT127 -> ACT124 [style=invis]
+	ACT124 -> ALM126 [style=invis]
+	ALM126 -> ACT125 [style=invis]
+	ACT125 -> FAF107 [style=invis]
+	FAF107 -> FAF108 [style=invis]
+	FAS112 -> BIQ050 [style=invis]
+	BIQ050 -> BOT035 [style=invis]
+	BOT035 -> FAR024 [style=invis]
+	FAR024 -> FAF117 [style=invis]
+	FAF117 -> ACT128 [style=invis]
+	ACT128 -> FAS118 [style=invis]
+	FAS118 -> ACT133 [style=invis]
+	ACT133 -> FAS134 [style=invis]
+	FIB618 -> FAS012 [style=invis]
+	FAS012 -> FAS124 [style=invis]
+	FAS124 -> MIC122 [style=invis]
+	MIC122 -> FAS011 [style=invis]
+	FAS011 -> FAS114 [style=invis]
+	FAS114 -> PFA028 [style=invis]
+	PFA028 -> FAS122 [style=invis]
+	MAT130 -> FAS117 [style=invis]
+	FAS117 -> PAG611 [style=invis]
+	PAG611 -> PAG612 [style=invis]
+	PAG612 -> FAS113 [style=invis]
+	FAS113 -> PFA155 [style=invis]
+	PFA155 -> PFA029 [style=invis]
+	PFA029 -> FAS133 [style=invis]
+	MOF009 -> FIB619 [style=invis]
+	FIB619 -> PAR026 [style=invis]
+	PAR026 -> PFA158 [style=invis]
+	PFA158 -> PFA026 [style=invis]
+	PFA026 -> PFA174 [style=invis]
+	PFA174 -> PFA031 [style=invis]
+	PFA031 -> GES055 [style=invis]
+	MOF143 -> QUI291 [style=invis]
+	QUI291 -> PFA150 [style=invis]
+	PFA150 -> QUI210 [style=invis]
+	QUI210 -> PFA154 [style=invis]
+	PFA154 -> PFA177 [style=invis]
+	PFA177 -> PFA169 [style=invis]
+	PFA169 -> PFA166 [style=invis]
+	PFA153 -> QUI292 [style=invis]
+	QUI292 -> QUI207 [style=invis]
+	QUI207 -> QUI294 [style=invis]
+	QUI294 -> PFA175 [style=invis]
+	PFA175 -> PFA603 [style=invis]
+	PFA603 -> PFA178 [style=invis]
+	PFA178 -> PFA176 [style=invis]
+	PFA173 -> QUI299 [style=invis]
+	QUI299 -> QUI297 [style=invis]
+	QUI297 -> QUI295 [style=invis]
+	QUI203 -> QUI298 [style=invis]
 	{
 		rank=same
-		DCC096 [label="INTRODUÇÃO À
-COMPUTAÇÃO" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC203 [label="PROGRAMAÇÃO E
-DESENVOLVIMENTO DE
-SOFTWARE I" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC638 [label="INTRODUÇÃO À LÓGICA
-COMPUTACIONAL" fontname="Helvetica-Bold" group=DCC style=filled]
-		ECN140 [label="INTRODUÇÃO À
-ECONOMIA" fontname="Helvetica-Bold" group=ECN style=filled]
-		MAT038 [label="GEOMETRIA ANALITICA
-E ALGEBRA LINEAR" fontname="Helvetica-Bold" group=MAT style=filled]
+		FAF116 [label="ORIENTAÇÃO À VIDA
+ACADÊMICA" fillcolor="#b07aa1" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAF style=filled]
+		FAS112 [label="FARMÁCIA E SOCIEDADE" fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
+		FIB618 [label="BIOFÍSICA B" fillcolor="#bab0ac" fontcolor="#000000" fontname="Helvetica-Bold" group=FIB style=filled]
+		MAT130 [label=MATEMATICA fillcolor="#a0cbe8" fontcolor="#000000" fontname="Helvetica-Bold" group=MAT style=filled]
+		MOF009 [label="ANATOMIA HUMANA
+BASICA" fillcolor="#8cd17d" fontcolor="#000000" fontname="Helvetica-Bold" group=MOF style=filled]
+		MOF143 [label="CITOLOGIA E
+HISTOLOGIA" fillcolor="#8cd17d" fontcolor="#000000" fontname="Helvetica-Bold" group=MOF style=filled]
+		PFA153 [label="FUNDAMENTOS DE
+CIÊNCIAS
+FARMACÊUTICAS" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA173 [label="PROCESSO DE
+UTILIZAÇÃO DE
+MEDICAMENTOS" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		QUI203 [label="QUIMICA GERAL F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
+		QUI204 [label="QUIMICA GERAL
+EXPERIMENTAL F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
 	}
 	{
 		rank=same
-		CAD103 [label="ADMINISTRAÇÃO TGA" fontname="Helvetica-Bold" group=CAD style=filled]
-		DCC114 [label="INTRODUÇÃO AOS
-SISTEMAS LÓGICOS" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC216 [label="MATEMÁTICA DISCRETA" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC219 [label="PROGRAMAÇÃO E
-DESENVOLVIMENTO DE
-SOFTWARE II" fontname="Helvetica-Bold" group=DCC style=filled]
-		MAT001 [label="CALCULO DIFERENCIAL
-E INTEGRAL I" fontname="Helvetica-Bold" group=MAT style=filled]
+		BIG157 [label="GENÉTICA F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=BIG style=filled]
+		BIQ050 [label="BIOQUIMICA CELULAR F" fillcolor="#76b7b2" fontcolor="#000000" fontname="Helvetica-Bold" group=BIQ style=filled]
+		FAS012 [label="POLITICAS DE SAUDE" fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
+		FAS117 [label="CLÍNICA FARMACÊUTICA
+I" fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
+		FIB619 [label="FISIOLOGIA F" fillcolor="#bab0ac" fontcolor="#000000" fontname="Helvetica-Bold" group=FIB style=filled]
+		QUI291 [label="QUÍMICA INORGÂNICA F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
+		QUI292 [label="QUÍMICA INORGÂNICA
+EXPERIMENTAL F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
+		QUI299 [label="ELEMENTOS DE FÍSICO-
+QUÍMICA F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
 	}
 	{
 		rank=same
-		DCC221 [label="ESTRUTURAS DE DADOS" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC222 [label="INTRODUÇÃO A BANCOS
-DE DADOS" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC639 [label="ÁLGEBRA LINEAR
-COMPUTACIONAL" fontname="Helvetica-Bold" group=DCC style=filled]
-		EST032 [label=PROBABILIDADE fontname="Helvetica-Bold" group=EST style=filled]
-		MAT039 [label="CÁLCULO DIFERENCIAL
-E INTEGRAL II" fontname="Helvetica-Bold" group=MAT style=filled]
+		BIQ602 [label="IMUNOLOGIA BASICA" fillcolor="#76b7b2" fontcolor="#000000" fontname="Helvetica-Bold" group=BIQ style=filled]
+		BOT035 [label="BOTÂNICA F" fillcolor="#59a14f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=BOT style=filled]
+		FAS124 [label="ESTÁGIO INTRODUTÓRIO
+EM FARMÁCIA NA
+ATENÇÃO" fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
+		PAG611 [label="PATOLOGIA GERAL F" fillcolor="#b6992d" fontcolor="#ffffff" fontname="Helvetica-Bold" group=PAG style=filled]
+		PAR026 [label="PARASITOLOGIA HUMANA
+F" fillcolor="#4e79a7" fontcolor="#ffffff" fontname="Helvetica-Bold" group=PAR style=filled]
+		PFA150 [label="FARMACOCINÉTICA" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		QUI207 [label="QUIMICA ORGANICA I F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
 	}
 	{
 		rank=same
-		DCC006 [label="ORGANIZAÇÃO DE
-COMPUTADORES I" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC051 [label="INTRODUÇÃO À CIÊNCIA
-DOS DADOS" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC129 [label="FUNDAMENTOS DA
-TEORIA DA COMPUTAÇÃO" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC206 [label="ALGORITMOS I" fontname="Helvetica-Bold" group=DCC style=filled]
-		MAT034 [label="ÁLGEBRA A" fontname="Helvetica-Bold" group=MAT style=filled]
+		EST083 [label="BIOESTATISTICA
+BASICA F" fillcolor="#edc948" fontcolor="#000000" fontname="Helvetica-Bold" group=EST style=filled]
+		FAR024 [label="FARMACOLOGIA BASICA
+F" fillcolor="#ff9da7" fontcolor="#000000" fontname="Helvetica-Bold" group=FAR style=filled]
+		MIC122 [label="INTRODUÇÃO À
+MICROBIOLOGIA" fillcolor="#ffbe7d" fontcolor="#000000" fontname="Helvetica-Bold" group=MIC style=filled]
+		PAG612 [label="PATOLOGIA DOS
+SISTEMAS" fillcolor="#b6992d" fontcolor="#ffffff" fontname="Helvetica-Bold" group=PAG style=filled]
+		PFA158 [label="CLÍNICA FARMACÊUTICA
+II" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		QUI210 [label="QUIMICA ORGANICA
+EXPERIMENTAL F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
+		QUI294 [label="QUÍMICA ORGÂNICA II
+F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
+		QUI297 [label="QUÍMICA ANALÍTICA
+EXPERIMENTAL F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
+		QUI298 [label="QUÍMICA ANALÍTICA F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
 	}
 	{
 		rank=same
-		DCC024 [label="LINGUAGENS DE
-PROGRAMACAO" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC035 [label="PESQUISA OPERACIONAL" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC207 [label="ALGORITMOS II" fontname="Helvetica-Bold" group=DCC style=filled]
-		MAT040 [label="EQUACOES
-DIFERENCIAIS C" fontname="Helvetica-Bold" group=MAT style=filled]
+		ACT127 [label="DIAGNÓSTICO
+LABORATORIAL DAS
+DOENÇAS HUMANAS I" fillcolor="#4e79a7" fontcolor="#ffffff" fontname="Helvetica-Bold" group=ACT style=filled]
+		FAF117 [label="SEMIOLOGIA
+FARMACÊUTICA E
+HABILIDADES CLÍNICAS
+I" fillcolor="#b07aa1" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAF style=filled]
+		FAS011 [label="ETICA E LEGISLACAO
+FARMACEUTICA" fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
+		FAS113 [label=FARMACOEPIDEMIOLOGIA fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
+		PFA026 [label="QUIMICA FARMACEUTICA
+E MEDICINAL I" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA154 [label="FARMACOTERAPIA I" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA175 [label="BASES QUÍMICAS E
+MOLECULARES DE
+PRODUTOS" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
 	}
 	{
 		rank=same
-		DCC053 [label="COMPILADORES I" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC094 [label="ENGENHARIA DE
-SOFTWARE" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC605 [label="SISTEMAS
-OPERACIONAIS" fontname="Helvetica-Bold" group=DCC style=filled]
+		ACT124 [label=TOXICOLOGIA fillcolor="#4e79a7" fontcolor="#ffffff" fontname="Helvetica-Bold" group=ACT style=filled]
+		ACT128 [label="DIAGNÓSTICO
+LABORATORIAL DE
+DOENÇAS HUMANAS II" fillcolor="#4e79a7" fontcolor="#ffffff" fontname="Helvetica-Bold" group=ACT style=filled]
+		FAS114 [label="ASSISTÊNCIA
+FARMACÊUTICA" fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
+		PFA155 [label="FARMACOTERAPIA II" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA174 [label="SEMIOLOGIA
+FARMACÊUTICA E
+HABILIDADE CLÍNÍCAS
+II" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA177 [label="FARMACOTÉCNICA I" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA603 [label="FARMACOGNOSIA I" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		QUI295 [label="QUÍMICA ANALÍTICA
+INSTRUMENTAL F" fillcolor="#e15759" fontcolor="#ffffff" fontname="Helvetica-Bold" group=QUI style=filled]
 	}
 	{
 		rank=same
-		DCC095 [label="REDES DE
-COMPUTADORES" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC636 [label="ÉTICA NA COMPUTAÇÃO" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC641 [label="FUNDAMENTOS DE
-SISTEMAS PARALELOS E" fontname="Helvetica-Bold" group=DCC style=filled]
-		DCC642 [label="INTRODUÇÃO À
-INTELIGÊNCIA
-ARTIFICIAL" fontname="Helvetica-Bold" group=DCC style=filled]
+		ALM126 [label=BROMATOLOGIA fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=ALM style=filled]
+		FAS118 [label="COMPETÊNCIAS
+CLÍNICAS AVANÇADAS I" fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
+		PFA028 [label="FARMACOGNOSIA II" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA029 [label="ANALISES
+FARMACOPEICAS" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA031 [label="INTRODUCAO A
+FARMACIA HOSPITALAR" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA169 [label="MEDICAMENTOS
+BIOLÓGICOS I" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA178 [label="FARMACOTÉCNICA II" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
 	}
 	{
 		rank=same
-		DCC637 [label="COMPUTAÇÃO E
-SOCIEDADE" fontname="Helvetica-Bold" group=DCC style=filled]
+		ACT125 [label="RADIOFARMACIA I" fillcolor="#4e79a7" fontcolor="#ffffff" fontname="Helvetica-Bold" group=ACT style=filled]
+		ACT133 [label="HABILIDADES
+LABORATORIAIS EM
+ANÁLISES CLÍNICAS E" fillcolor="#4e79a7" fontcolor="#ffffff" fontname="Helvetica-Bold" group=ACT style=filled]
+		FAS122 [label="ESTÁGIO EM FARMÁCIA
+COMUNITÁRIA" fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
+		FAS133 [label="METODOLOGIA DE
+PESQUISA CIENTÍFICA" fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
+		GES055 [label="FUNDAMENTOS DE
+GESTÃO EM SAÚDE" fillcolor="#d37295" fontcolor="#ffffff" fontname="Helvetica-Bold" group=GES style=filled]
+		PFA166 [label="FARMACOTÉCNICA III" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
+		PFA176 [label="ASSUNTOS
+REGULATÓRIOS" fillcolor="#f28e2b" fontcolor="#000000" fontname="Helvetica-Bold" group=PFA style=filled]
 	}
 	{
 		rank=same
-		DCC604 [label="PROJETO ORIENTADO EM
-COMPUTACAO I" fontname="Helvetica-Bold" group=DCC style=filled]
+		FAF107 [label="ESTÁGIO EM ANÁLISES
+CLÍNICAS E
+TOXICOLÓGICAS E" fillcolor="#b07aa1" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAF style=filled]
+		FAS134 [label="MONOGRAFIA EM
+CIÊNCIAS
+FARMACÊUTICAS" fillcolor="#9c755f" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAS style=filled]
 	}
 	{
 		rank=sink
-		DCC009 [label="PROJETO ORIENTADO EM
-COMPUTACAO II" fontname="Helvetica-Bold" group=DCC style=filled]
+		FAF108 [label="ESTÁGIO EM FÁRMACOS,
+MEDICAMENTOS,
+COSMÉTICOS" fillcolor="#b07aa1" fontcolor="#ffffff" fontname="Helvetica-Bold" group=FAF style=filled]
 	}
-	DCC638 -> DCC114 [color="#555555" constraint=false penwidth=1.8]
-	DCC638 -> DCC216 [color="#555555" constraint=false penwidth=1.8]
-	DCC203 -> DCC219 [color="#555555" constraint=false penwidth=1.8]
-	DCC219 -> DCC221 [color="#555555" constraint=false penwidth=1.8]
-	MAT001 -> DCC639 [color="#555555" constraint=false penwidth=1.8]
-	MAT038 -> DCC639 [color="#555555" constraint=false penwidth=1.8]
-	MAT001 -> MAT039 [color="#555555" constraint=false penwidth=1.8]
-	DCC114 -> DCC006 [color="#555555" constraint=false penwidth=1.8]
-	MAT001 -> DCC051 [color="#555555" constraint=false penwidth=1.8]
-	DCC216 -> DCC051 [color="#555555" constraint=false penwidth=1.8]
-	DCC639 -> DCC051 [color="#555555" constraint=false penwidth=1.8]
-	DCC638 -> DCC129 [color="#555555" constraint=false penwidth=1.8]
-	DCC221 -> DCC206 [color="#555555" constraint=false penwidth=1.8]
-	DCC216 -> DCC206 [color="#555555" constraint=false penwidth=1.8]
-	DCC221 -> DCC024 [color="#555555" constraint=false penwidth=1.8]
-	DCC206 -> DCC207 [color="#555555" constraint=false penwidth=1.8]
-	MAT039 -> MAT040 [color="#555555" constraint=false penwidth=1.8]
-	DCC129 -> DCC053 [color="#555555" constraint=false penwidth=1.8]
-	DCC222 -> DCC094 [color="#555555" constraint=false penwidth=1.8]
-	DCC221 -> DCC605 [color="#555555" constraint=false penwidth=1.8]
-	DCC221 -> DCC642 [color="#555555" constraint=false penwidth=1.8]
-	DCC604 -> DCC009 [color="#555555" constraint=false penwidth=1.8]
+	PFA173 -> FAS117 [color="#f28e2b" constraint=false penwidth=1.8]
+	FAS112 -> FAS117 [color="#9c755f" constraint=false penwidth=1.8]
+	MOF143 -> FIB619 [color="#8cd17d" constraint=false penwidth=1.8]
+	FIB618 -> FIB619 [color="#bab0ac" constraint=false penwidth=1.8]
+	QUI203 -> QUI291 [color="#e15759" constraint=false penwidth=1.8]
+	QUI204 -> QUI291 [color="#e15759" constraint=false penwidth=1.8]
+	QUI203 -> QUI292 [color="#e15759" constraint=false penwidth=1.8]
+	QUI204 -> QUI292 [color="#e15759" constraint=false penwidth=1.8]
+	MAT130 -> QUI299 [color="#a0cbe8" constraint=false penwidth=1.8]
+	QUI203 -> QUI299 [color="#e15759" constraint=false penwidth=1.8]
+	QUI204 -> QUI299 [color="#e15759" constraint=false penwidth=1.8]
+	BIQ050 -> BIQ602 [color="#76b7b2" constraint=false penwidth=1.8]
+	FAS117 -> FAS124 [color="#9c755f" constraint=false penwidth=1.8]
+	FIB619 -> PAG611 [color="#bab0ac" constraint=false penwidth=1.8]
+	MOF143 -> PAR026 [color="#8cd17d" constraint=false penwidth=1.8]
+	QUI299 -> PFA150 [color="#e15759" constraint=false penwidth=1.8]
+	QUI203 -> QUI207 [color="#e15759" constraint=false penwidth=1.8]
+	QUI204 -> QUI207 [color="#e15759" constraint=false penwidth=1.8]
+	FIB619 -> FAR024 [color="#bab0ac" constraint=false penwidth=1.8]
+	BIQ050 -> FAR024 [color="#76b7b2" constraint=false penwidth=1.8]
+	BIQ050 -> MIC122 [color="#76b7b2" constraint=false penwidth=1.8]
+	PAG611 -> PAG612 [color="#b6992d" constraint=false penwidth=1.8]
+	FAS117 -> PFA158 [color="#9c755f" constraint=false penwidth=1.8]
+	QUI207 -> QUI210 [color="#e15759" constraint=false penwidth=1.8]
+	QUI207 -> QUI294 [color="#e15759" constraint=false penwidth=1.8]
+	QUI291 -> QUI297 [color="#e15759" constraint=false penwidth=1.8]
+	QUI292 -> QUI297 [color="#e15759" constraint=false penwidth=1.8]
+	QUI291 -> QUI298 [color="#e15759" constraint=false penwidth=1.8]
+	QUI292 -> QUI298 [color="#e15759" constraint=false penwidth=1.8]
+	PAG612 -> ACT127 [color="#b6992d" constraint=false penwidth=1.8]
+	FAR024 -> FAF117 [color="#ff9da7" constraint=false penwidth=1.8]
+	PAG612 -> FAF117 [color="#b6992d" constraint=false penwidth=1.8]
+	FAR024 -> FAS113 [color="#ff9da7" constraint=false penwidth=1.8]
+	EST083 -> FAS113 [color="#edc948" constraint=false penwidth=1.8]
+	FAS112 -> FAS113 [color="#9c755f" constraint=false penwidth=1.8]
+	FAR024 -> PFA026 [color="#ff9da7" constraint=false penwidth=1.8]
+	QUI210 -> PFA026 [color="#e15759" constraint=false penwidth=1.8]
+	QUI294 -> PFA026 [color="#e15759" constraint=false penwidth=1.8]
+	FAR024 -> PFA154 [color="#ff9da7" constraint=false penwidth=1.8]
+	PAG612 -> PFA154 [color="#b6992d" constraint=false penwidth=1.8]
+	QUI210 -> PFA175 [color="#e15759" constraint=false penwidth=1.8]
+	QUI294 -> PFA175 [color="#e15759" constraint=false penwidth=1.8]
+	FAR024 -> ACT124 [color="#ff9da7" constraint=false penwidth=1.8]
+	BIQ602 -> ACT128 [color="#76b7b2" constraint=false penwidth=1.8]
+	PAR026 -> ACT128 [color="#4e79a7" constraint=false penwidth=1.8]
+	MIC122 -> ACT128 [color="#ffbe7d" constraint=false penwidth=1.8]
+	PFA173 -> FAS114 [color="#f28e2b" constraint=false penwidth=1.8]
+	FAS011 -> FAS114 [color="#9c755f" constraint=false penwidth=1.8]
+	FAR024 -> PFA155 [color="#ff9da7" constraint=false penwidth=1.8]
+	PAR026 -> PFA155 [color="#4e79a7" constraint=false penwidth=1.8]
+	PFA026 -> PFA155 [color="#f28e2b" constraint=false penwidth=1.8]
+	FAF117 -> PFA174 [color="#b07aa1" constraint=false penwidth=1.8]
+	FAR024 -> PFA177 [color="#ff9da7" constraint=false penwidth=1.8]
+	QUI299 -> PFA177 [color="#e15759" constraint=false penwidth=1.8]
+	QUI298 -> PFA603 [color="#e15759" constraint=false penwidth=1.8]
+	PFA175 -> PFA603 [color="#f28e2b" constraint=false penwidth=1.8]
+	QUI297 -> QUI295 [color="#e15759" constraint=false penwidth=1.8]
+	QUI298 -> QUI295 [color="#e15759" constraint=false penwidth=1.8]
+	QUI298 -> ALM126 [color="#e15759" constraint=false penwidth=1.8]
+	FAS124 -> FAS118 [color="#9c755f" constraint=false penwidth=1.8]
+	PFA154 -> FAS118 [color="#f28e2b" constraint=false penwidth=1.8]
+	PFA155 -> FAS118 [color="#f28e2b" constraint=false penwidth=1.8]
+	PFA603 -> PFA028 [color="#f28e2b" constraint=false penwidth=1.8]
+	QUI295 -> PFA029 [color="#e15759" constraint=false penwidth=1.8]
+	FAS113 -> PFA031 [color="#9c755f" constraint=false penwidth=1.8]
+	FAS114 -> PFA031 [color="#9c755f" constraint=false penwidth=1.8]
+	PFA154 -> PFA031 [color="#f28e2b" constraint=false penwidth=1.8]
+	BIQ602 -> PFA169 [color="#76b7b2" constraint=false penwidth=1.8]
+	BIG157 -> PFA169 [color="#e15759" constraint=false penwidth=1.8]
+	PFA177 -> PFA178 [color="#f28e2b" constraint=false penwidth=1.8]
+	FIB619 -> ACT125 [color="#bab0ac" constraint=false penwidth=1.8]
+	QUI291 -> ACT125 [color="#e15759" constraint=false penwidth=1.8]
+	ACT127 -> ACT133 [color="#4e79a7" constraint=false penwidth=1.8]
+	ACT128 -> ACT133 [color="#4e79a7" constraint=false penwidth=1.8]
+	FAS114 -> FAS122 [color="#9c755f" constraint=false penwidth=1.8]
+	FAS118 -> FAS122 [color="#9c755f" constraint=false penwidth=1.8]
+	FAS113 -> FAS133 [color="#9c755f" constraint=false penwidth=1.8]
+	PFA178 -> PFA166 [color="#f28e2b" constraint=false penwidth=1.8]
+	PFA029 -> PFA176 [color="#f28e2b" constraint=false penwidth=1.8]
+	PFA177 -> PFA176 [color="#f28e2b" constraint=false penwidth=1.8]
+	ACT133 -> FAF107 [color="#4e79a7" constraint=false penwidth=1.8]
+	ALM126 -> FAF107 [color="#f28e2b" constraint=false penwidth=1.8]
+	FAS133 -> FAS134 [color="#9c755f" constraint=false penwidth=1.8]
+	PFA028 -> FAF108 [color="#f28e2b" constraint=false penwidth=1.8]
+	PFA029 -> FAF108 [color="#f28e2b" constraint=false penwidth=1.8]
+	FAS122 -> FAF108 [color="#9c755f" constraint=false penwidth=1.8]
 }

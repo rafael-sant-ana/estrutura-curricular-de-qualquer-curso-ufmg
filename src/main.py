@@ -3,7 +3,7 @@ from src.classes.SubjectsRepository import SubjectsRepository
 from src.classes.Visualizer import Visualizer
 
 def main():
-  fname = "grade-compsci.pdf"
+  fname = "grade-farmacia.pdf"
 
   pdf = PdfProcessor(fname)
   subjects_by_semester = pdf.get_subjects_by_semester()
