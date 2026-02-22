@@ -26,6 +26,9 @@ class PdfProcessor:
     characteristics = []
     amount_of_splitted_subjects = len(semester_subjects_splitted)
     
+    if 'Atividades de estágio curricular obrigatório' in semester_subjects_splitted:
+      has_ended = True
+
     i = 0
     while i < amount_of_splitted_subjects:
       is_new_subject = (i > 0) and (i % amount_labels == 0)
@@ -34,11 +37,8 @@ class PdfProcessor:
         characteristics = []
 
       characteristic = semester_subjects_splitted[i]
-      if characteristic == 'Atividades de estágio curricular obrigatório':
-        has_ended = True
-        break      
 
-      if characteristic in ['Carga horária adicional do período', 'RELATÓRIO DE PERCURSO CURRICULAR']: # Marcadores de que saimos da tabela
+      if characteristic in ['Carga horária adicional do período', 'RELATÓRIO DE PERCURSO CURRICULAR', 'Atividades de estágio curricular obrigatório']: # Marcadores de que saimos da tabela
         break
       
       if ((i % amount_labels) == 1) and not re.match(r"\d+", characteristic): # a caracteristica atual eh uma extensao do nome, e nao os creditos

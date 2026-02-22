@@ -11,9 +11,9 @@ class Subject:
     self.neededActivities = neededActivities.split(', ')
     self.neededExtra = neededExtra
 
-    _DIG, code, discipline_alias = name.split(' - ')
+    _DIG, code, *discipline_alias = name.split(' - ')
 
-    self.name = discipline_alias
+    self.name = (' - ').join(discipline_alias)
     self.code = code
 
     self.fields = ['name', 'code', 'credits', 'theoryHours', 'practicalHours', 'totalHours', 'variableContent', 'group', 'nature', 'neededActivities', 'neededExtra']
