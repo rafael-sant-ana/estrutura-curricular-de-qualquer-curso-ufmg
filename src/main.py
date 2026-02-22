@@ -1,8 +1,9 @@
 from src.classes.PdfProcessor import PdfProcessor
 from src.classes.SubjectsRepository import SubjectsRepository
+from src.classes.Visualizer import Visualizer
 
 def main():
-  fname = "grade-farmacia.pdf"
+  fname = "grade-compsci.pdf"
 
   pdf = PdfProcessor(fname)
   subjects_by_semester = pdf.get_subjects_by_semester()
@@ -11,7 +12,10 @@ def main():
 
   df = subjects_repository.to_pandas()
 
-  print(df)
+  visualizer = Visualizer(df)
+
+  visualizer.generate_visualization()
 
 if __name__ == "__main__":
   main()
+ 

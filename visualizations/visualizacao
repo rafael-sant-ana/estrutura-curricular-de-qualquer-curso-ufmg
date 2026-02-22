@@ -1,0 +1,146 @@
+digraph {
+	graph [concentrate=true newrank=true nodesep=0.5 rankdir=TB ranksep=1.0 splines=ortho]
+	node [fillcolor="#e1e1e1" fontname=Helvetica fontsize=9 height=0.8 shape=box style=filled width=2.0]
+	DCC096 -> CAD103 [style=invis]
+	CAD103 -> DCC221 [style=invis]
+	DCC221 -> DCC006 [style=invis]
+	DCC006 -> DCC024 [style=invis]
+	DCC024 -> DCC053 [style=invis]
+	DCC053 -> DCC095 [style=invis]
+	DCC095 -> DCC637 [style=invis]
+	DCC637 -> DCC604 [style=invis]
+	DCC604 -> DCC009 [style=invis]
+	DCC203 -> DCC114 [style=invis]
+	DCC114 -> DCC222 [style=invis]
+	DCC222 -> DCC051 [style=invis]
+	DCC051 -> DCC035 [style=invis]
+	DCC035 -> DCC094 [style=invis]
+	DCC094 -> DCC636 [style=invis]
+	DCC638 -> DCC216 [style=invis]
+	DCC216 -> DCC639 [style=invis]
+	DCC639 -> DCC129 [style=invis]
+	DCC129 -> DCC207 [style=invis]
+	DCC207 -> DCC605 [style=invis]
+	DCC605 -> DCC641 [style=invis]
+	ECN140 -> DCC219 [style=invis]
+	DCC219 -> EST032 [style=invis]
+	EST032 -> DCC206 [style=invis]
+	DCC206 -> MAT040 [style=invis]
+	MAT040 -> DCC642 [style=invis]
+	MAT038 -> MAT001 [style=invis]
+	MAT001 -> MAT039 [style=invis]
+	MAT039 -> MAT034 [style=invis]
+	{
+		rank=same
+		DCC096 [label="INTRODUÇÃO À
+COMPUTAÇÃO" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC203 [label="PROGRAMAÇÃO E
+DESENVOLVIMENTO DE
+SOFTWARE I" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC638 [label="INTRODUÇÃO À LÓGICA
+COMPUTACIONAL" fontname="Helvetica-Bold" group=DCC style=filled]
+		ECN140 [label="INTRODUÇÃO À
+ECONOMIA" fontname="Helvetica-Bold" group=ECN style=filled]
+		MAT038 [label="GEOMETRIA ANALITICA
+E ALGEBRA LINEAR" fontname="Helvetica-Bold" group=MAT style=filled]
+	}
+	{
+		rank=same
+		CAD103 [label="ADMINISTRAÇÃO TGA" fontname="Helvetica-Bold" group=CAD style=filled]
+		DCC114 [label="INTRODUÇÃO AOS
+SISTEMAS LÓGICOS" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC216 [label="MATEMÁTICA DISCRETA" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC219 [label="PROGRAMAÇÃO E
+DESENVOLVIMENTO DE
+SOFTWARE II" fontname="Helvetica-Bold" group=DCC style=filled]
+		MAT001 [label="CALCULO DIFERENCIAL
+E INTEGRAL I" fontname="Helvetica-Bold" group=MAT style=filled]
+	}
+	{
+		rank=same
+		DCC221 [label="ESTRUTURAS DE DADOS" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC222 [label="INTRODUÇÃO A BANCOS
+DE DADOS" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC639 [label="ÁLGEBRA LINEAR
+COMPUTACIONAL" fontname="Helvetica-Bold" group=DCC style=filled]
+		EST032 [label=PROBABILIDADE fontname="Helvetica-Bold" group=EST style=filled]
+		MAT039 [label="CÁLCULO DIFERENCIAL
+E INTEGRAL II" fontname="Helvetica-Bold" group=MAT style=filled]
+	}
+	{
+		rank=same
+		DCC006 [label="ORGANIZAÇÃO DE
+COMPUTADORES I" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC051 [label="INTRODUÇÃO À CIÊNCIA
+DOS DADOS" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC129 [label="FUNDAMENTOS DA
+TEORIA DA COMPUTAÇÃO" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC206 [label="ALGORITMOS I" fontname="Helvetica-Bold" group=DCC style=filled]
+		MAT034 [label="ÁLGEBRA A" fontname="Helvetica-Bold" group=MAT style=filled]
+	}
+	{
+		rank=same
+		DCC024 [label="LINGUAGENS DE
+PROGRAMACAO" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC035 [label="PESQUISA OPERACIONAL" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC207 [label="ALGORITMOS II" fontname="Helvetica-Bold" group=DCC style=filled]
+		MAT040 [label="EQUACOES
+DIFERENCIAIS C" fontname="Helvetica-Bold" group=MAT style=filled]
+	}
+	{
+		rank=same
+		DCC053 [label="COMPILADORES I" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC094 [label="ENGENHARIA DE
+SOFTWARE" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC605 [label="SISTEMAS
+OPERACIONAIS" fontname="Helvetica-Bold" group=DCC style=filled]
+	}
+	{
+		rank=same
+		DCC095 [label="REDES DE
+COMPUTADORES" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC636 [label="ÉTICA NA COMPUTAÇÃO" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC641 [label="FUNDAMENTOS DE
+SISTEMAS PARALELOS E" fontname="Helvetica-Bold" group=DCC style=filled]
+		DCC642 [label="INTRODUÇÃO À
+INTELIGÊNCIA
+ARTIFICIAL" fontname="Helvetica-Bold" group=DCC style=filled]
+	}
+	{
+		rank=same
+		DCC637 [label="COMPUTAÇÃO E
+SOCIEDADE" fontname="Helvetica-Bold" group=DCC style=filled]
+	}
+	{
+		rank=same
+		DCC604 [label="PROJETO ORIENTADO EM
+COMPUTACAO I" fontname="Helvetica-Bold" group=DCC style=filled]
+	}
+	{
+		rank=sink
+		DCC009 [label="PROJETO ORIENTADO EM
+COMPUTACAO II" fontname="Helvetica-Bold" group=DCC style=filled]
+	}
+	DCC638 -> DCC114 [color="#555555" constraint=false penwidth=1.8]
+	DCC638 -> DCC216 [color="#555555" constraint=false penwidth=1.8]
+	DCC203 -> DCC219 [color="#555555" constraint=false penwidth=1.8]
+	DCC219 -> DCC221 [color="#555555" constraint=false penwidth=1.8]
+	MAT001 -> DCC639 [color="#555555" constraint=false penwidth=1.8]
+	MAT038 -> DCC639 [color="#555555" constraint=false penwidth=1.8]
+	MAT001 -> MAT039 [color="#555555" constraint=false penwidth=1.8]
+	DCC114 -> DCC006 [color="#555555" constraint=false penwidth=1.8]
+	MAT001 -> DCC051 [color="#555555" constraint=false penwidth=1.8]
+	DCC216 -> DCC051 [color="#555555" constraint=false penwidth=1.8]
+	DCC639 -> DCC051 [color="#555555" constraint=false penwidth=1.8]
+	DCC638 -> DCC129 [color="#555555" constraint=false penwidth=1.8]
+	DCC221 -> DCC206 [color="#555555" constraint=false penwidth=1.8]
+	DCC216 -> DCC206 [color="#555555" constraint=false penwidth=1.8]
+	DCC221 -> DCC024 [color="#555555" constraint=false penwidth=1.8]
+	DCC206 -> DCC207 [color="#555555" constraint=false penwidth=1.8]
+	MAT039 -> MAT040 [color="#555555" constraint=false penwidth=1.8]
+	DCC129 -> DCC053 [color="#555555" constraint=false penwidth=1.8]
+	DCC222 -> DCC094 [color="#555555" constraint=false penwidth=1.8]
+	DCC221 -> DCC605 [color="#555555" constraint=false penwidth=1.8]
+	DCC221 -> DCC642 [color="#555555" constraint=false penwidth=1.8]
+	DCC604 -> DCC009 [color="#555555" constraint=false penwidth=1.8]
+}
