@@ -97,7 +97,7 @@ class Visualizer:
         if not re.match(r".*\-.*", activity):
           parsed_activity = activity.split(',')[0]
           edge_color = code_to_color.get(parsed_activity, '#555555')
-          dot.edge(parsed_activity, row['code'], penwidth='1.8', constraint='false', color=edge_color)
+          dot.edge(parsed_activity, row['code'], penwidth='1.0', constraint='false', color=edge_color)
 
     dot.render(
       "visualizacao",
