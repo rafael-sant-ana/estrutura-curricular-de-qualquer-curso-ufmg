@@ -1,7 +1,7 @@
 import pymupdf
 import re 
 
-from src.classes.subject import Subject
+from src.classes.Subject import Subject
 
 class PdfProcessor:
   def __init__(self, fname):
